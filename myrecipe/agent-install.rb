@@ -13,3 +13,11 @@ end
 service "codedeploy-agent" do
   action [:enable, :start]
 end
+
+package 'ruby-full' do
+  action :install
+end
+
+package 'awscli' do
+  action :install
+end
